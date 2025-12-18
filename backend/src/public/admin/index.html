@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BugTrace Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🐞 BugTrace – Admin Dashboard</h1>
+    <p>Analyze runtime bugs reported by applications</p>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Error Type</th>
+          <th>Message</th>
+          <th>File</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody id="bugTableBody">
+        <!-- Bugs will be injected here -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
