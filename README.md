@@ -1,84 +1,114 @@
-# BugTrace
+<div align="center">
 
-### Real-Time Backend Error Monitoring
+# ◈ BugTrace
 
-A backend error-monitoring project built with Node.js, Express, MongoDB, and Slack alerts to capture and analyze application errors.
+### Observe. Diagnose. Resolve.
 
-## Features
+**A backend-focused application error-monitoring project built with Node.js, Express, MongoDB, and Slack alerts.**
 
-- Backend error monitoring
-- Error tracking and analysis
-- MongoDB integration
-- Slack alert integration
+<p>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/Express-222222?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
+  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack"/>
+</p>
 
-## Tech Stack
+</div>
 
-- **Runtime:** Node.js
-- **Backend:** Express.js
-- **Database:** MongoDB
-- **Notifications:** Slack
+---
 
-## Project Structure
+## `01` — Overview
+
+BugTrace is a backend monitoring project designed to capture application errors, store relevant information, and support error analysis through a Node.js and Express backend.
+
+The project explores backend error handling, database integration, and notification workflows.
+
+## `02` — Core Components
+
+- **Backend API:** Node.js and Express.
+- **Data storage:** MongoDB integration.
+- **Notifications:** Slack alert integration.
+- **Error monitoring:** Capture and review application errors.
+
+*The exact implemented functionality depends on the current backend code.*
+
+## `03` — Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Node.js | JavaScript runtime |
+| Express.js | Backend application and routes |
+| MongoDB | Data persistence |
+| Slack | Error notifications |
+| JavaScript | Application logic |
+
+## `04` — Project Structure
 
 ```text
 BugTrace/
 ├── backend/
+│   ├── src/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
 ├── .gitignore
 └── README.md
 ```
 
-## Getting Started
+## `05` — Getting Started
 
 ### Prerequisites
 
-Install the following before running the project:
+- Node.js and npm
+- A MongoDB connection
+- Slack webhook credentials if notifications require them
 
-- Node.js
-- npm
-- MongoDB
-- Slack credentials, if Slack notifications are enabled
-
-### Installation
-
-Clone the repository:
+### Clone the repository
 
 ```bash
 git clone https://github.com/reubenbilon/BugTrace.git
 cd BugTrace
 ```
 
-Open the `backend` folder and install its dependencies:
+### Install dependencies
 
 ```bash
 cd backend
 npm install
 ```
 
-Configure the environment variables required by the backend before starting the application.
+### Configure the environment
 
-Check the backend's `package.json` for the available start scripts.
+Create a `.env` file using the variable names required by your application. Keep database credentials and Slack webhook URLs private.
 
-## Environment Variables
+### Start the application
 
-Create a `.env` file in the location expected by the backend code. Add the required configuration, for example:
+Check `backend/package.json` for the available scripts, then run the appropriate command, for example:
 
-```env
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-SLACK_WEBHOOK_URL=your_slack_webhook_url
+```bash
+npm start
 ```
 
-Use the actual variable names expected by your application. Never commit real credentials or tokens.
+## `06` — Engineering Focus
 
-## Future Improvements
+- Backend error handling and monitoring
+- Database integration
+- API design and maintainability
+- Notification workflows
+- Opportunities for automated testing and containerized deployment
 
-- Automated backend tests
-- Structured error logging
-- Docker-based development environment
+## `07` — Security Note
+
+Never commit database credentials, API keys, or Slack webhook URLs. Store secrets in environment variables and keep `.env` excluded from version control.
 
 ## Author
 
 **Reuben Bilon**
 
-- [GitHub](https://github.com/reubenbilon)
-- [LinkedIn](https://linkedin.com/in/reuben-bilon)
+[GitHub](https://github.com/reubenbilon) · [LinkedIn](https://linkedin.com/in/reuben-bilon)
+
+<div align="center">
+
+*Building more observable and maintainable backend systems.*
+
+</div>
